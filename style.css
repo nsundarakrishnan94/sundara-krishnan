@@ -1,0 +1,852 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,600;1,700;1,800;1,900&display=swap');
+
+ 
+/*Main CSS Starts*/
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+ 
+}
+
+
+
+
+html{
+    scroll-behavior: smooth
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    vertical-align: baseline;
+    background-color: #ffffff;
+    /* font-family: 'Lato', sans-serif; */
+    font-weight: 400;
+    font-size: 14px;
+    letter-spacing: 1px;
+    line-height: 1.42857143;
+}
+
+
+/*Main CSS Ends*/
+
+
+/*Preloader CSS Starts*/
+#preloader{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    z-index: 9999;
+}
+
+/*Preloader CSS Endss*/
+
+
+/*Navbar CSS Starts*/
+
+ .navbar{
+    position:fixed;
+    overflow: visible;
+    width:100% !important;
+    z-index: 99999 !important;
+    top:0;
+    background-color: rgba(0, 0, 0, .8);
+    -webkit-box-shadow: 0 4px 10px -15px #000;
+    -moz-box-shadow: 0 4px 10px -15px #000;
+    box-shadow: 0 4px 10px -15px #000;
+
+}
+.navbar-nav{
+    margin-right: 10%;
+}
+.nav-item{
+    margin-right: 5%;
+    text-decoration: none !important;
+    color:white !important;
+} 
+
+/*Navbar CSS Ends*/
+
+
+/*Hero Background CSS Starts*/
+
+#particles-js {
+
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    z-index: 0;
+    background-color: transparent;
+    background-color: linear-gradient(to right, rgba(0, 65, 106, 1), rgba(228, 229, 230, 1)); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-image: url(./assets/mybgright.jpg);
+    
+    background-blend-mode: multiply;
+    background-attachment: fixed !important;
+    background-size: cover;
+    opacity: 1;
+    background-position: 50% 50%;
+    background-repeat: no-repeat; 
+   
+}
+
+/*Hero Background CSS Ends*/
+
+
+
+
+/*Header section Starts*/
+.headersection{
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.header-wrapper{
+    display: grid;
+    color: white;
+    grid-template-columns:  1.3fr .7fr;
+    height: 100vh;
+
+}
+
+.headerLeft{
+    margin: 35% 10%;
+    position: relative;
+}
+
+
+.social-widget-header {
+    display: block;
+    position: absolute;
+    margin: 6% 0% ;
+    border: 1px solid rgb(255, 255, 255,.2);
+    border-right: none;
+    border-left: none;
+    padding: 15px 0;
+    z-index: 10;
+    color: white;
+}
+
+.fa {
+    font-size: 1.5rem;
+    color: white !important;
+    margin: 0px 15px ;
+}
+
+/*Header section Ends*/
+
+
+
+
+
+
+/*About Section */
+
+.aboutsection{
+    margin-left: auto;
+    margin-right: auto;
+    height: 100vh;
+ 
+}
+
+.about-wrapper{
+    display: grid;
+    grid-template-columns:  1fr 1fr ;
+    margin-top: 2%;
+   
+    height: 100vh;
+}
+
+.aboutheadingcontainer{
+    height: 49px;
+    grid-column: span 2;
+    text-align: center;
+
+}
+
+.aboutline{
+    display: inline-block;
+  
+    background-color: black;
+    height: 8%;
+    width: 10%;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.whoami{
+    display: inline-block;
+    color: coral;
+    margin-left: .8%;
+}
+
+.work{
+    display: inline-block;
+    color: coral;
+    margin-left: .8%;
+}
+
+
+.aboutmeimg{
+    height: 800px;
+    width: auto;
+    margin-top: -20%;
+}
+
+.aboutpara{
+    margin-top: 20%;
+    width: 90%;
+}
+
+
+
+
+
+
+
+/***************************************************Portfolio Section*****************************************************************/
+
+#portfoliopagesection{
+    height: 100vh;
+    background: #F0F0F0;
+    }
+    .portfolioheadingcontainerdiv{
+        margin-top: 4%;
+        text-align: center;
+    }
+    
+    .portfolioline{
+        display: inline-block;
+      
+        background-color: black;
+        height: 8%;
+        width: 10%;
+        margin-left: auto;
+        margin-right: auto;
+    
+    }
+
+    
+.portfolioimg{
+    margin-top: 2%;
+}
+
+
+.portfolioimg:hover{
+  color: #424242;
+  -webkit-transition: all .3s ease-in;
+  -moz-transition: all .3s ease-in;
+  -ms-transition: all .3s ease-in;
+  -o-transition: all .3s ease-in;
+  transition: all .3s ease-in;
+  opacity: 1;
+  transform: scale(1.15);
+  -ms-transform: scale(1.15);
+  /*IE9*/-webkit-transform: scale(1.15);
+  /*SafariandChrome*/:;
+  -webkit-transform: scale(1.15);
+  -moz-transform: scale(1.15);
+  -o-transform: scale(1.15);
+}
+
+
+.githublink{
+    color: black;
+    font-weight: 600;
+    font-kerning: normal;
+    
+
+}
+
+.githublink:hover{
+    color: black;
+    font-weight: 600;
+    font-kerning: normal;
+
+}
+
+
+
+
+
+.btnfilter{
+    cursor: pointer;
+    padding-right: 25px;
+   
+}
+.btnfilter:hover {
+    padding-bottom: 20px ;
+    font-weight: 700;
+    text-decoration: underline;
+}
+
+.btnfiltercontainer{
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+
+/* quick grid */
+.container {
+    width: 93%;
+    margin: auto;
+  }
+  
+  /* Bootstrap-style columns */
+  .column {
+    position: relative;
+    float: left;
+    min-height: 1px;
+    width: 30%;
+    padding-left: 4px;
+    padding-right: 4px;
+    
+    /* Space between tiles */
+    margin-top: 8px;
+  }
+  
+  .col-span {
+    width: 50%;
+  }
+  
+  .my-sizer-element {
+    width: 8.33333%;
+  }
+  
+  /* default styles so shuffle doesn't have to set them (it will if they're missing) */
+  .my-shuffle {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  /* Ensure images take up the same space when they load */
+  /* https://vestride.github.io/Shuffle/images */
+  .aspect {
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: 100%;
+    overflow: hidden;
+  }
+  
+  .aspect__inner {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  }
+  
+  .aspect--16x9 {
+    padding-bottom: 56.25%;
+  }
+  
+  .aspect--9x80 {
+    padding-bottom: calc(112.5% + 8px);
+  }
+  
+  .aspect--32x9 {
+    padding-bottom: calc(28.125% - 3px);
+  }
+  
+
+  
+  /* Small reset */
+  *,
+  ::before,
+  ::after {
+    box-sizing: border-box;
+  }
+  
+  figure {
+    margin: 0;
+    padding: 0;
+  }
+  figure:nth-child(2n){
+    margin-bottom:30px;
+  } 
+  figure:nth-child(2n+1){
+    margin-top:30px;
+  } 
+
+
+
+
+/***************************************************************Bootstrap aboutme*********************************************************/
+
+#aboutpagesection{
+height: 100vh;
+}
+
+
+
+.img-responsive{
+ 
+    z-index: -1;
+    margin-top: 20%;
+    height: 530px;
+    margin-left: -3%;
+}
+
+.aboutlefmaincontainer{
+    margin-top: -6%;
+}
+
+.aboutrightmaincontainer{
+    margin-top: -7%;
+}
+
+.video-js{
+    margin-top: 5%;
+    display: block;
+    z-index: 0;
+
+}
+
+.aboutheadingcontainerdiv{
+    text-align: center;
+    margin-top: 4%;
+   
+} 
+
+
+.downloadresume{
+    border: 3px solid  rgba(0, 0, 1) ;
+    padding: 10px 12px;
+    font-size: .8rem;
+   color: black;
+   
+}
+
+.downloadresumebtn{
+    margin-top: 10%;
+}
+
+a[class^="downloadresume"]:hover {
+    background-color: black;
+    color: white;
+    text-decoration: none;
+  }
+
+
+
+
+
+
+
+/*-----------------------------------------------Contact Us*-----------------------------------------------*/
+
+.contact-wrapper{
+   height: 120vh;
+}
+
+
+.contactleftmaincontainer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 6% auto 0px;
+}
+
+
+.portfolioheadingcontainerdiv{
+margin-bottom: 4%;
+  
+}
+
+.form-icon-box{
+    background-color: black;
+    display: inline;
+    padding: 25px 10px;
+}
+
+
+
+.box-details{
+    margin-top: 10%;
+    text-decoration: none;
+}
+
+
+
+.txtcontact{
+    text-decoration: none;
+    color: black;
+}
+
+
+.arrowmark-down{
+   margin-left: 40%;
+    margin-top: 2%;
+    height: 0;
+    width: 0;
+    border-left: 30px solid transparent;
+    border-right: 30px solid transparent;
+    border-top: 30px solid #000000;
+
+}
+
+
+
+.contact-form{
+    margin-top: 5%;
+    margin-left: 25%;
+    width: 50%;
+}
+
+
+.form-control{
+    color: #000000;
+    border: none;
+    border-bottom: 1px solid #cccccc;
+    outline: none;
+    border-radius: 0;
+    box-shadow: none;
+    background-color: transparent;
+    height: 46px;
+    padding: 10px 16px;
+    
+}
+
+.btnsend{
+    color: gray;
+    border: 1px solid gray;
+    margin-top: 3%;
+}
+
+
+
+.contactheadingcontainerdiv{
+    text-align: center;
+    margin-top:4% ;
+}
+.contactline{
+  display: inline-block;
+
+  background-color: black;
+  height: 6%;
+  width: 9%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+
+
+::-webkit-input-placeholder { /* Edge */
+    color: gray;
+    font-size: small;
+    font-weight: 600;
+    letter-spacing: 2px;
+  }
+  
+  :-ms-input-placeholder { /* Internet Explorer */
+    color: gray;
+    font-size: small;
+    font-weight: 600;
+    letter-spacing: 2px;
+  }
+  
+  ::placeholder {
+    color: gray;
+    font-size: small;
+    font-weight: 600;
+    letter-spacing: 2px;
+  }
+
+
+
+
+
+
+
+
+
+/*Media query for mobile zie if 600px*/
+
+
+  @media only screen and (max-width: 600px) {
+  
+
+
+
+
+    #particles-js {
+        width: 100%;
+        height: 100vh;
+        position: absolute;
+        z-index: 0;
+        background-color: transparent;
+        background-color: linear-gradient(to right, rgba(0, 65, 106, 1), rgba(228, 229, 230, 1)); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        background-image: url(./assets/mybgrightmobile.jpg);
+        
+        background-blend-mode: multiply;
+        background-attachment: fixed !important;
+        background-size: cover;
+        opacity: 1;
+        background-position: 50% 50%;
+        background-repeat: no-repeat; 
+        }
+
+
+
+    /*Header section Starts*/
+.headersection{
+    width: 100vw;
+}
+
+.header-wrapper{
+    display: grid;
+    color: white;
+    grid-template-columns:  s1.3fr .7fr;
+    height: 100vh;
+}
+
+.headerLeft{
+    width: 100vw;
+    margin: 80% 5%;
+    position: relative;
+
+}
+
+.headerLeft > h4{
+    font-size: 18px;
+}
+
+.headerLeft > h1{
+    font-size: 22px;
+}
+
+.social-widget-header {
+    display: block;
+    position: absolute;
+    margin: 6% 0% ;
+    border: 1px solid rgb(255, 255, 255,.2);
+    border-right: none;
+    border-left: none;
+    padding: 15px 0;
+    z-index: 10;
+    color: white;
+}
+
+.fa {
+    font-size: 1rem;
+    color: white !important;
+    margin: 0px 15px ;
+}
+
+/*Header section Ends*/
+
+
+
+
+
+
+/*Bootstrap aboutme*/
+
+#aboutpagesection{
+    height: 150vh;
+    margin-left: auto;
+    margin-right: auto;
+    }
+
+
+    
+.img-responsive{
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 8%;
+    height: 400px;
+    }
+    
+
+.aboutrightmaincontainer{
+        margin-top: -10%;
+        text-align: center;
+    }
+    
+    .video-js{
+        margin-bottom: 20%;
+        height: 150px;
+        width: 300px;
+        margin-top: 5%;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        z-index: 0;
+    
+    }
+    
+    .aboutheadingcontainerdiv{
+        text-align: center;
+        margin-top: 4%;
+       
+    } 
+    
+    
+    .downloadresume{
+        border: 3px solid  rgba(0, 0, 1) ;
+        padding: 10px 12px;
+        font-size: .8rem;
+       color: black;
+       
+    }
+    
+    .downloadresumebtn{
+        margin-top: 10%;
+    }
+    
+    a[class^="downloadresume"]:hover {
+        background-color: black;
+        color: white;
+        text-decoration: none;
+      }
+    
+    
+      /*About Section */
+
+.aboutsection{
+    margin-left: auto;
+    margin-right: auto;
+    height: 95vh;
+ 
+}
+
+.about-wrapper{
+    display: grid;
+    grid-template-columns:  1fr 1fr ;
+    margin-top: 2%;
+   
+    height: 100vh;
+}
+
+.aboutheadingcontainer{
+    height: 49px;
+    grid-column: span 2;
+    text-align: center;
+
+}
+
+.aboutline{
+    display: inline-block;
+  
+    background-color: black;
+    height: 8%;
+    width: 10%;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.whoami{
+    display: inline-block;
+    color: coral;
+    margin-left: .8%;
+}
+
+.work{
+    display: inline-block;
+    color: coral;
+    margin-left: .8%;
+}
+
+
+.aboutmeimg{
+    height: 800px;
+    width: auto;
+    margin-top: -20%;
+}
+
+.aboutpara{
+    margin-top: 20%;
+    margin-bottom: 15%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+
+
+/*Portfolio section*/
+
+#portfoliopagesection{
+    height: 140vh ;
+}
+
+.uiimage{
+    width: 320px;
+}
+
+
+.portfolioimg{
+    height: 180px !important;
+
+}
+
+
+
+
+
+
+/*-----------------------------------------------Contact Us*-----------------------------------------------*/
+
+.contact-wrapper{
+    height: 120vh;
+ }
+
+ .contactform{
+    margin-top: 10%;
+ }
+
+ .form-control{
+     margin-left:-25% ;
+     width: 150%;
+ }
+ 
+ 
+ .form-icon-box-gap{
+     margin-top: 15%;
+     background-color: crimson;
+ }
+
+ .form-icon-box{
+     float: left;
+     padding: 15px 5px;
+ }
+ 
+ .arrowmark-down{
+     margin-left: -10%;
+     margin-top: 6%;
+     float: left;
+     border-left: 20px solid transparent;
+     border-right: 20px solid transparent;
+     border-top: 20px solid #000000;
+     transform: rotate(-90deg);
+     -webkit-transform: rotate(-90deg);
+     -moz-transform: rotate(-90deg);
+     -ms-transform: rotate(-90deg);
+     -o-transform: rotate(-90deg);
+}
+
+
+
+.box-details{
+    margin-top: -12%;
+    float: left;
+    width: 100vw;
+}
+
+
+.txtcontact1{
+    margin: -10%;
+
+}
+
+
+
+
+
+
+  }
