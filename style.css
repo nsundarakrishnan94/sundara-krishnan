@@ -10,6 +10,13 @@
 }
 
 
+html,body {
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+}
 
 
 html{
@@ -230,6 +237,8 @@ body{
     
 .portfolioimg{
     margin-top: 2%;
+    height: 200px;
+
 }
 
 
@@ -320,8 +329,7 @@ body{
     overflow: hidden;
   }
   
-  /* Ensure images take up the same space when they load */
-  /* https://vestride.github.io/Shuffle/images */
+  
   .aspect {
     position: relative;
     width: 100%;
@@ -370,7 +378,9 @@ body{
     margin-top:30px;
   } 
 
-
+.mobileviewlayout{
+    display: none;
+}
 
 
 /***************************************************************Bootstrap aboutme*********************************************************/
@@ -569,6 +579,13 @@ margin-bottom: 4%;
   @media only screen and (max-width: 600px) {
   
 
+    html,body {
+        width: 100%;
+        height: 100%;
+        margin: 0px;
+        padding: 0px;
+        overflow-x: hidden;
+    }
 
 
 
@@ -785,10 +802,85 @@ margin-bottom: 4%;
 
 }
 
+.picture-item{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.aspect {
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: 100%;
+    overflow: hidden;
+  }
+  
+  .aspect__inner {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  }
+  
+  .aspect--16x9 {
+    padding-bottom: 56.25%;
+  }
+  
+  .aspect--9x80 {
+    padding-bottom: calc(112.5% + 8px);
+  }
+  
+  .aspect--32x9 {
+    padding-bottom: calc(28.125% - 3px);
+  }
+  
+
+  
+  /* Small reset */
+  *,
+  ::before,
+  ::after {
+    box-sizing: border-box;
+  }
+  
+  figure {
+    margin: 0;
+    padding: 0;
+  }
+  figure:nth-child(2n){
+    margin-bottom:30px;
+  } 
+  figure:nth-child(2n+1){
+    margin-top:30px;
+  } 
 
 
+  .btnfiltercontainer,.my-shuffle-container{
+      display: none;
+  }
 
+  .mobileviewlayout{
+      display: block;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+  }
 
+  .portfolioimgmobile{
+      margin: 0 auto;
+      height: 150px;
+      margin-bottom: 10px;
+  }
+.uiimagemobile{
+    width: 270px;
+    height: 150px;
+}
+
+.imgcontainer{
+    width: 266px;
+    margin: 0 auto;
+}
 
 /*-----------------------------------------------Contact Us*-----------------------------------------------*/
 
@@ -844,8 +936,13 @@ margin-bottom: 4%;
 
 }
 
+.arrowmark-down{
+    display: none;
+}
 
-
+.whatsappnumber{
+    margin-left: -63px;
+}
 
 
 
